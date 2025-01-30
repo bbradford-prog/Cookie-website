@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+header {
+  background-color: #d2691e;
+  padding: 1em 0;
+  color: white;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.cookie-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.cookie-card {
+  background: #fff;
+  padding: 15px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  width: 200px;
+  text-align: center;
+}
+
+.cookie-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  background-color: #d2691e;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #a0522d;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
