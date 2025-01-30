@@ -1,0 +1,22 @@
+let cart = [];
+let total = 0;
+
+function addToCart(cookieName, price) {
+  cart.push({ cookieName, price });
+  total += price;
+
+  updateCartDisplay();
+}
+
+function updateCartDisplay() {
+  const cartItems = document.getElementById('cart-items');
+  cartItems.innerHTML = '';
+
+  cart.forEach(item => {
+    const li = document.createElement('li');
+    li.textContent = `${item.cookieName} - $${item.price.toFixed(2)}`;
+    cartItems.appendChild(li);
+  });
+
+  document.getElementById('cart-total').textContent = total.toFixed(2);
+}
