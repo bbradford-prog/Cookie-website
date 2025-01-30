@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookie Haven</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Cookie Haven!</h1>
+    <nav>
+      <a href="#products">Our Cookies</a>
+      <a href="#contact">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="products">
+      <h2>Delicious Cookies</h2>
+      <div class="cookie-container">
+        <div class="cookie-card">
+          <img src="chocolate-chip.jpg" alt="Chocolate Chip Cookie">
+          <h3>Chocolate Chip Cookie</h3>
+          <p>$3.00 per cookie</p>
+          <button onclick="addToCart('Chocolate Chip', 3.00)">Add to Cart</button>
+        </div>
+        
+        <div class="cookie-card">
+          <img src="oatmeal-raisin.jpg" alt="Oatmeal Raisin Cookie">
+          <h3>Oatmeal Raisin Cookie</h3>
+          <p>$2.50 per cookie</p>
+          <button onclick="addToCart('Oatmeal Raisin', 2.50)">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="cart">
+      <h2>Shopping Cart</h2>
+      <ul id="cart-items"></ul>
+      <p>Total: $<span id="cart-total">0.00</span></p>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <p>Contact us at <a href="mailto:support@cookiehaven.com">support@cookiehaven.com</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
